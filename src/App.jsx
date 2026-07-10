@@ -101,7 +101,7 @@ function calculate(inputs) {
   // If alpha_i == alpha_w: no error (common-material law)
   let instError_in = null;
   if (alpha_i != null) {
-    instError_in = (alpha_i - alpha_w) * L0_in * dT;
+    instError_in = (alpha_w - alpha_i) * L0_in * dT;
   }
 
   // Tolerance in inches
